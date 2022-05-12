@@ -23,23 +23,33 @@ function question1(){
 
 question1();
 
-let answerTwo = prompt('Have I always lived in Seattle?').toLowerCase();
+function question2(){
 
-if(answerTwo === 'yes' || answerTwo === 'y'){
-  alert('Nope! I grew up in Everett, which is about 20 miles North of Seattle.');
-} else if(answerTwo === 'no' || answerTwo === 'n'){
-  alert('Correct! I actually grew up in a city about 20 miles North of Seattle called Everett.');
-  correctAns++;
+  let answerTwo = prompt('Have I always lived in Seattle?').toLowerCase();
+
+  if(answerTwo === 'yes' || answerTwo === 'y'){
+    alert('Nope! I grew up in Everett, which is about 20 miles North of Seattle.');
+  } else if(answerTwo === 'no' || answerTwo === 'n'){
+    alert('Correct! I actually grew up in a city about 20 miles North of Seattle called Everett.');
+    correctAns++;
+  }
 }
 
-let answerThree = prompt('Do I have a car?').toLowerCase();
+question2();
 
-if(answerThree === 'yes' || answerThree === 'y'){
-  alert('Yup! Like most Seattleites, I own a Subaru.');
-  correctAns++;
-} else if(answerThree === 'no' || answerThree === 'n'){
-  alert('Sorry, that\'s wrong, but I actually do prefer walking or taking public transportation rather than using my car.');
+function question3(){
+
+  let answerThree = prompt('Do I have a car?').toLowerCase();
+
+  if(answerThree === 'yes' || answerThree === 'y'){
+    alert('Yup! Like most Seattleites, I own a Subaru.');
+    correctAns++;
+  } else if(answerThree === 'no' || answerThree === 'n'){
+    alert('Sorry, that\'s wrong, but I actually do prefer walking or taking public transportation rather than using my car.');
+  }
 }
+
+question3();
 
 let answerFour = prompt('Do I have any tattoos?').toLowerCase();
 
