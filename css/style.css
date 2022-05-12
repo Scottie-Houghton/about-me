@@ -1,0 +1,25 @@
+header {
+  margin-left: 5px;
+}
+main {
+  margin-left: 5px;
+}
+ol {
+  list-style:decimal;
+}
+
+ol li {
+  margin-left: 25px;
+}
+
+ul {
+  list-style:disc;
+}
+
+ul li {
+  margin-left: 25px;
+}
+
+footer {
+  margin-left: 5px;
+}
