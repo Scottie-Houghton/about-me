@@ -74,67 +74,19 @@ for(let i = 0; i < guesses; i++) {
   }
 }
 
-let tattooNumber = ['< 5', '<5', '< 10', '<10', '< 15', '<15', '< 20', '<20', '< 25', '<25', '< 30', '<30', '< 35', '<35', '< 40', '<40'];
+let top10Bands = ['david bowie', 'robyn', 'talking heads', 'fleetwood mac', 'death cab for cutie', 'lcd soundsystem', 'these arms are snakes', 'phoebe bridgers', 'big thief', 'dehd'];
 
-let tattooGuesses = 6;
-
-for(let i = 0; i < tattooGuesses; i++) {
-  let userNumber = prompt('As mentioned in a previous question, I have tattoos. Can you guess how many I have? Guess a multiple of 5 tattoo range between 0 and 40 and use a less than symbol to indicate which range (ex: < 75 equals the range 71-75).');
-  if (userNumber === tattooNumber[8]) {
-    alert('Whoa, that\'s correct! I have 24 tattoos. Good guess!');
-    correctAns++;
-    break;
-  }
-  else if (userNumber === tattooNumber[9]) {
-    alert('Whoa, that\'s correct! I have 24 tattoos. Good guess!');
-    correctAns++;
-    break;
-  }
-  else if (userNumber === tattooNumber[0]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[1]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[2]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[3]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[4]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[5]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[6]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[7]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[10]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[11]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[12]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[13]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[14]) {
-    alert('Nope, try again!');
-  }
-  else if (userNumber === tattooNumber[15]) {
-    alert('Nope, try again!');
-  }
-  if (i === 5) {
-    alert(`Nice try! I have 24 tattoos, so you should've guessed ${tattooNumber[8]}.`);
+for(let i = 0; i < 6; i++) {
+  let bandGuess = prompt('Can you guess one of my top 10 favorite bands or musicians, as of right now?').toLowerCase();
+  for(let j = 0; j < top10Bands.length; j++) {
+    if(bandGuess === top10Bands[j]) {
+      alert('Yup, that\'s one of them! You know me so well!!');
+      i = 6;
+      break;
+    }
   }
 }
+
+alert('Here are my top 10 favorite bands or musicians, as of right now: David Bowie, Robyn, Talking Heads, Fleetwood Mac, Death Cab For Cutie, LCD Soundsystem, These Arms Are Snakes, Phoebe Bridgers, Big Thief, Dehd.');
 
 alert('Thanks for taking my quiz! You got ' + correctAns + ' answers correct!');
