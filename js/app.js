@@ -4,17 +4,24 @@ console.log('Hello World');
 
 let correctAns = 0;
 
+
 let userName = prompt('What is your name?');
 alert(`Welcome, ${userName}! Hope you're ready for a guessing game.`);
 
-let answerOne = prompt('I live in Seattle, WA, right now, but do you think I am from Washington state originally?').toLowerCase();
+// write my function then name it
+function question1(){
+  // declare a variable, assigned it the value of the user's input
+  let answerOne = prompt('I live in Seattle, WA, right now, but do you think I am from Washington state originally?').toLowerCase();
 
-if(answerOne === 'yes' || answerOne === 'y'){
-  alert('That\'s right! Born and raised in Washington!');
-  correctAns++;
-} else if(answerOne === 'no' || answerOne === 'n'){
-  alert('Believe it or not, I\'ve been a Washingtonian my whole life!');
+  if(answerOne === 'yes' || answerOne === 'y'){
+    alert('That\'s right! Born and raised in Washington!');
+    correctAns++;
+  } else if(answerOne === 'no' || answerOne === 'n'){
+    alert('Believe it or not, I\'ve been a Washingtonian my whole life!');
+  }
 }
+
+question1();
 
 let answerTwo = prompt('Have I always lived in Seattle?').toLowerCase();
 
