@@ -77,27 +77,32 @@ function question5(){
 
 question5();
 
+
 let scottieNumber = 47;
 
 let guesses = 4;
 
-for(let i = 0; i < guesses; i++) {
-  let userNumber = prompt('Can you guess the number I\'m thinking of?');
-  if (Number(userNumber) === scottieNumber) {
-    alert('Wow, that\'s right! Good guess!');
-    correctAns++;
-    break;
-  }
-  else if (scottieNumber < userNumber) {
-    alert('Too high!');
-  }
-  else if (scottieNumber > userNumber) {
-    alert('Too low!');
-  }
-  if (i === 3) {
-    alert(`Nice try! My number was ${scottieNumber}.`);
+function question6(){
+  for(let i = 0; i < guesses; i++) {
+    let userNumber = prompt('Can you guess the number I\'m thinking of?');
+    if (Number(userNumber) === scottieNumber) {
+      alert('Wow, that\'s right! Good guess!');
+      correctAns++;
+      break;
+    }
+    else if (scottieNumber < userNumber) {
+      alert('Too high!');
+    }
+    else if (scottieNumber > userNumber) {
+      alert('Too low!');
+    }
+    if (i === 3) {
+      alert(`Nice try! My number was ${scottieNumber}.`);
+    }
   }
 }
+
+question6();
 
 let top10Bands = ['david bowie', 'robyn', 'talking heads', 'fleetwood mac', 'death cab for cutie', 'lcd soundsystem', 'these arms are snakes', 'phoebe bridgers', 'big thief', 'dehd'];
 
