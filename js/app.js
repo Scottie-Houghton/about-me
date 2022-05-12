@@ -106,16 +106,20 @@ question6();
 
 let top10Bands = ['david bowie', 'robyn', 'talking heads', 'fleetwood mac', 'death cab for cutie', 'lcd soundsystem', 'these arms are snakes', 'phoebe bridgers', 'big thief', 'dehd'];
 
-for(let i = 0; i < 6; i++) {
-  let bandGuess = prompt('Can you guess one of my top 10 favorite bands or musicians, as of right now?').toLowerCase();
-  for(let j = 0; j < top10Bands.length; j++) {
-    if(bandGuess === top10Bands[j]) {
-      alert('Yup, that\'s one of them! You know me so well!!');
-      i = 6;
-      break;
+function question7(){
+  for(let i = 0; i < 6; i++) {
+    let bandGuess = prompt('Can you guess one of my top 10 favorite bands or musicians, as of right now?').toLowerCase();
+    for(let j = 0; j < top10Bands.length; j++) {
+      if(bandGuess === top10Bands[j]) {
+        alert('Yup, that\'s one of them! You know me so well!!');
+        i = 6;
+        break;
+      }
     }
   }
 }
+
+question7();
 
 alert('Here are my top 10 favorite bands or musicians, as of right now: David Bowie, Robyn, Talking Heads, Fleetwood Mac, Death Cab For Cutie, LCD Soundsystem, These Arms Are Snakes, Phoebe Bridgers, Big Thief, Dehd.');
 
