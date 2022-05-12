@@ -51,23 +51,31 @@ function question3(){
 
 question3();
 
-let answerFour = prompt('Do I have any tattoos?').toLowerCase();
+function question4(){
+  let answerFour = prompt('Do I have any tattoos?').toLowerCase();
 
-if(answerFour === 'yes' || answerFour === 'y'){
-  alert('That\'s correct! I have several, mostly on my arms, but also a few in other random spots.');
-  correctAns++;
-} else if(answerFour === 'no' || answerFour === 'n'){
-  alert('Actually, I do have several tattoos, mostly on my arms, but also a few in other random spots.');
+  if(answerFour === 'yes' || answerFour === 'y'){
+    alert('That\'s correct! I have several, mostly on my arms, but also a few in other random spots.');
+    correctAns++;
+  } else if(answerFour === 'no' || answerFour === 'n'){
+    alert('Actually, I do have several tattoos, mostly on my arms, but also a few in other random spots.');
+  }
 }
 
-let answerFive = prompt('Do I consider myself an outdoorsy person?').toLowerCase();
+question4();
 
-if(answerFive === 'yes' || answerFive === 'y'){
-  alert('You\'re right! Though I love living in the big city, I do like to get away into nature sometimes.');
-  correctAns++;
-} else if(answerFive === 'no' || answerFive === 'n'){
-  alert('Even though I love living in a big city, I actually do enjoy getting away into nature sometimes.');
+function question5(){
+  let answerFive = prompt('Do I consider myself an outdoorsy person?').toLowerCase();
+
+  if(answerFive === 'yes' || answerFive === 'y'){
+    alert('You\'re right! Though I love living in the big city, I do like to get away into nature sometimes.');
+    correctAns++;
+  } else if(answerFive === 'no' || answerFive === 'n'){
+    alert('Even though I love living in a big city, I actually do enjoy getting away into nature sometimes.');
+  }
 }
+
+question5();
 
 let scottieNumber = 47;
 
