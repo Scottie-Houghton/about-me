@@ -1,16 +1,11 @@
 'use strict';
 
-console.log('Hello World');
-
 let correctAns = 0;
-
 
 let userName = prompt('What is your name?');
 alert(`Welcome, ${userName}! Hope you're ready for a guessing game.`);
 
-// write my function then name it
 function question1(){
-  // declare a variable, assigned it the value of the user's input
   let answerOne = prompt('I live in Seattle, WA, right now, but do you think I am from Washington state originally?').toLowerCase();
 
   if(answerOne === 'yes' || answerOne === 'y'){
@@ -112,6 +107,7 @@ function question7(){
     for(let j = 0; j < top10Bands.length; j++) {
       if(bandGuess === top10Bands[j]) {
         alert('Yup, that\'s one of them! You know me so well!!');
+        correctAns++;
         i = 6;
         break;
       }

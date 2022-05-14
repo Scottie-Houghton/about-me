@@ -18,3 +18,4 @@ Added the HTML ordered and unordered lists as requested. Had issues trying to fi
 ## Lab 04
 
 ### Reflections and Comments
+It was good to get to learn what it's like to work with another Dev rather than working on solo projects. Also liked learning about forking and pull requests in GitHub.

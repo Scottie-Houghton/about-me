@@ -1,9 +1,18 @@
 header {
   margin-left: 5px;
+  background-color: rgb(255, 225, 0);
+  color:rgb(208, 18, 18);
+  font-size:xx-large;
+  font-weight: bolder;
+
 }
 main {
   margin-left: 5px;
+  background-color: rgb(255, 225, 0);
+  color:rgb(208, 18, 18);
+  font-weight: bolder;
 }
+
 ol {
   list-style:decimal;
 }
